@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliação</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Ponto M - Avaliação Diagnóstica</h1>
+    </header>
+
+    <main>
+        <form id="quiz-form">
+            <div id="q1" class="pagina ativa">
+                <h1 class="subtitulo">Questão 1:</h1>
+                <p class="enunciado">O resultado da subtração 1.403 - 279 é:</p>
+
+                <div class="letras">
+                    <label><input type="radio" name="q1" value="a"> a) 1.124</label>
+                    <label><input type="radio" name="q1" value="b"> b) 1.224</label>
+                    <label><input type="radio" name="q1" value="c"> c) 1.134</label>
+                    <label><input type="radio" name="q1" value="d"> d) 1.234</label>
+                </div>
+
+                <a onclick="mudar('q2')">Próxima Questão</a>
+            </div>
+
+            <div id="q2" class="pagina">
+                <h1 class="subtitulo">Questão 2:</h1>
+                <p class="enunciado">Andressa está organizando a biblioteca. O acervo tinha 678 livros. Recebeu doação de 127 novos livros, mas descartou 45 danificados. Quantos livros sobraram?</p>
+
+                <div class="letras">
+                    <label><input type="radio" name="q2" value="a"> a) 805</label>
+                    <label><input type="radio" name="q2" value="b"> b) 760</label>
+                    <label><input type="radio" name="q2" value="c"> c) 750</label>
+                    <label><input type="radio" name="q2" value="d"> d) 633</label>
+                </div>
+
+                <a onclick="mudar('q3')">Próxima Questão</a>
+            </div>
+
+            <div id="q3" class="pagina">
+                <h1 class="subtitulo">Questão 3:</h1>
+                <p class="enunciado">Uma pizza foi dividida em 8 pedaços iguais. Carlos comeu 3 pedaços. A fração que representa a quantidade que restou e sua respectiva porcentagem são:</p>
+
+                <div class="letras">
+                    <label><input type="radio" name="q3" value="a"> a) 3/8 e 37,5%</label>
+                    <label><input type="radio" name="q3" value="b"> b) 5/8 e 50%</label>
+                    <label><input type="radio" name="q3" value="c"> c) 5/8 e 62,5%</label>
+                    <label><input type="radio" name="q3" value="d"> d) 3/8 e 62,5%</label>
+                </div>
+
+                <a onclick="mudar('q4')">Próxima Questão</a>
+            </div>
+
+            <div id="q4" class="pagina">
+                <h1 class="subtitulo">Questão 4:</h1>
+                <p class="enunciado">Considere a expressão algébrica 5 - x². Qual é o valor numérico dessa expressão quando x = -3?</p>
+
+                <div class="letras">
+                    <label><input type="radio" name="q4" value="a"> a) 14</label>
+                    <label><input type="radio" name="q4" value="b"> b) -4</label>
+                    <label><input type="radio" name="q4" value="c"> c) -1</label>
+                    <label><input type="radio" name="q4" value="d"> d) 11</label>
+                </div>
+
+                <a onclick="mudar('q5')">Próxima Questão</a>
+            </div>
+
+            <div id="q5" class="pagina">
+                <h1 class="subtitulo">Questão 5:</h1>
+                <p class="enunciado">Um teatro possui 12 fileiras com 15 cadeiras cada. Foram vendidos 145 entradas. Quantos assentos ainda ficaram livres?</p>
+
+                <div class="letras">
+                    <label><input type="radio" name="q5" value="a"> a) 35</label>
+                    <label><input type="radio" name="q5" value="b"> b) 45</label>
+                    <label><input type="radio" name="q5" value="c"> c) 180</label>
+                    <label><input type="radio" name="q5" value="d"> d) 25</label>
+                </div>
+                <a id="submit" onclick="CorrigirQuiz()">Enviar Resposta</a>
+            </div>
+        </form>
+
+        <div id="resultado" class="secao-resultado"></div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
