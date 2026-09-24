@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ponto M</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Ponto M - Avaliação Diagnóstica</h1>
+
+        <hr>
+
+        <nav>
+            <ul class="lista">
+                <li><a onclick="mudarPara('inicio')">Início</a></li>
+                <li><a onclick="mudarPara('sobre')">Sobre</a></li>
+                <li><a onclick="mudarPara('contatar')">Contatar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="inicio" class="pagina ativa">
+            <h1 class="subtitulo">Descubra suas habilidades em Matemática!</h1>
+            <a class="botao" onclick="mudarPara('questoes')">Começar</a>
+        </div>
+
+        <div id="sobre" class="pagina">
+            <h1 class="subtitulo">Sobre mim</h1>
+            <p>Me chamo Yosef, tenho 16 anos e estou cursando TI no SENAI.</p>
+        </div>
+
+        <div id="contatar" class="pagina">
+            <h1 class="subtitulo">Contate-me</h1>
+            <p><strong>E-mail:</strong> yosefabdon3@gmail.com</p>
+            <p><strong>Telefone:</strong> (71) 9 9206-8845</p>
+        </div>
+
+        <div id="questoes" class="pagina"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
